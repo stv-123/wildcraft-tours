@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Book Your Journey | Wildcraft Tours</title>
+
+    <meta
+        name="description"
+        content="Plan and book your tailor-made Kenya adventure with Wildcraft Tours."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/booking.css"
+    >
+
+</head>
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header class="header booking-header" id="header">
+
+    <div class="container nav-container">
+
+               <a href="index.html" class="logo">
+    <img src="images/wildcraft logo.PNG" class="site-logo">
+
+    <span class="logo-text">
+        <strong>WILDCRAFT</strong>
+        <small>TOURS</small>
+    </span>
+</a>
+
+
+        <nav class="nav" id="nav">
+
+            <a href="index.html#home" class="nav-link">
+                Home
+            </a>
+
+            <a href="index.html#tours" class="nav-link">
+                Tours
+            </a>
+
+            <a href="index.html#destinations" class="nav-link">
+                Destinations
+            </a>
+
+            <a href="index.html#experiences" class="nav-link">
+                Experiences
+            </a>
+
+            <a href="index.html#about" class="nav-link">
+                About Us
+            </a>
+
+            <a href="index.html#contact" class="nav-link">
+                Contact
+            </a>
+
+            <a href="booking.html" class="nav-book-btn">
+                Book Now
+            </a>
+
+        </nav>
+
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================
+     BOOKING HERO
+========================================= -->
+
+<section class="booking-page-hero">
+
+    <div class="booking-page-overlay"></div>
+
+    <div class="container booking-page-hero-content">
+
+        <span class="hero-tag">
+            PLAN YOUR JOURNEY
+        </span>
+
+        <h1>
+            Your adventure
+            <span>starts here.</span>
+        </h1>
+
+        <p>
+            Tell us what you're dreaming of and we'll
+            help craft an unforgettable Kenyan experience.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     BOOKING SECTION
+========================================= -->
+
+<section class="booking-section">
+
+    <div class="container booking-layout">
+
+
+        <!-- =====================================
+             BOOKING FORM
+        ====================================== -->
+
+        <div class="booking-form-wrapper">
+
+            <div class="booking-intro">
+
+                <span class="eyebrow">
+                    STEP INTO YOUR ADVENTURE
+                </span>
+
+                <h2>
+                    Plan your
+                    <em>journey.</em>
+                </h2>
+
+                <p>
+                    Complete the form below and our travel
+                    team will contact you to finalize your
+                    itinerary.
+                </p>
+
+            </div>
+
+
+            <!-- PROGRESS -->
+
+            <div class="booking-progress">
+
+                <div class="progress-step active">
+
+                    <span>01</span>
+
+                    <small>
+                        Journey
+                    </small>
+
+                </div>
+
+
+                <div class="progress-line"></div>
+
+
+                <div class="progress-step">
+
+                    <span>02</span>
+
+                    <small>
+                        Travelers
+                    </small>
+
+                </div>
+
+
+                <div class="progress-line"></div>
+
+
+                <div class="progress-step">
+
+                    <span>03</span>
+
+                    <small>
+                        Details
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <form
+                id="bookingForm"
+                class="booking-form"
+            >
+
+
+                <!-- =========================
+                     STEP 1
+                ========================== -->
+
+                <div
+                    class="booking-step active"
+                    data-step="1"
+                >
+
+                    <div class="form-section-title">
+
+                        <span>01</span>
+
+                        <div>
+                            <h3>
+                                Choose your experience
+                            </h3>
+
+                            <p>
+                                What kind of journey are you looking for?
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="tourType">
+                            Experience Type *
+                        </label>
+
+                        <select
+                            id="tourType"
+                            name="tourType"
+                            required
+                        >
+
+                            <option value="">
+                                Select an experience
+                            </option>
+
+                            <option value="safari">
+                                Safari Adventure
+                            </option>
+
+                            <option value="beach">
+                                Beach Escape
+                            </option>
+
+                            <option value="culture">
+                                Cultural Journey
+                            </option>
+
+                            <option value="adventure">
+                                Adventure Tour
+                            </option>
+
+                            <option value="custom">
+                                Custom / Tailor-Made Tour
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="tour">
+
+                            Preferred Tour *
+
+                        </label>
+
+                        <select
+                            id="tour"
+                            name="tour"
+                            required
+                        >
+
+                            <option value="">
+                                Select a tour
+                            </option>
+
+                            <option value="Maasai Mara Safari">
+                                Maasai Mara Safari
+                            </option>
+
+                            <option value="Amboseli Adventure">
+                                Amboseli Adventure
+                            </option>
+
+                            <option value="Diani Beach Escape">
+                                Diani Beach Escape
+                            </option>
+
+                            <option value="Tsavo Wilderness">
+                                Tsavo Wilderness
+                            </option>
+
+                            <option value="Samburu Cultural Safari">
+                                Samburu Cultural Safari
+                            </option>
+
+                            <option value="Mount Kenya Adventure">
+                                Mount Kenya Adventure
+                            </option>
+
+                            <option value="Custom Tour">
+                                I want a custom tour
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="travelDate">
+                                Preferred Travel Date *
+                            </label>
+
+                            <input
+                                type="date"
+                                id="travelDate"
+                                name="travelDate"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="duration">
+                                Duration
+                            </label>
+
+                            <select
+                                id="duration"
+                                name="duration"
+                            >
+
+                                <option value="">
+                                    Select duration
+                                </option>
+
+                                <option value="1-2 Days">
+                                    1–2 Days
+                                </option>
+
+                                <option value="3-4 Days">
+                                    3–4 Days
+                                </option>
+
+                                <option value="5-7 Days">
+                                    5–7 Days
+                                </option>
+
+                                <option value="8-14 Days">
+                                    8–14 Days
+                                </option>
+
+                                <option value="14+ Days">
+                                    14+ Days
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-navigation">
+
+                        <button
+                            type="button"
+                            class="booking-next"
+                            data-next="2"
+                        >
+                            Continue
+
+                            <span>→</span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     STEP 2
+                ========================== -->
+
+                <div
+                    class="booking-step"
+                    data-step="2"
+                >
+
+                    <div class="form-section-title">
+
+                        <span>02</span>
+
+                        <div>
+
+                            <h3>
+                                Tell us about your travelers
+                            </h3>
+
+                            <p>
+                                Help us understand your group.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="adults">
+                                Adults *
+                            </label>
+
+                            <div class="number-control">
+
+                                <button
+                                    type="button"
+                                    class="number-minus"
+                                    data-target="adults"
+                                >
+                                    −
+                                </button>
+
+                                <input
+                                    type="number"
+                                    id="adults"
+                                    name="adults"
+                                    value="1"
+                                    min="1"
+                                    max="50"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="number-plus"
+                                    data-target="adults"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="children">
+                                Children
+                            </label>
+
+                            <div class="number-control">
+
+                                <button
+                                    type="button"
+                                    class="number-minus"
+                                    data-target="children"
+                                >
+                                    −
+                                </button>
+
+                                <input
+                                    type="number"
+                                    id="children"
+                                    name="children"
+                                    value="0"
+                                    min="0"
+                                    max="30"
+                                >
+
+                                <button
+                                    type="button"
+                                    class="number-plus"
+                                    data-target="children"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="accommodation">
+                            Accommodation Preference
+                        </label>
+
+                        <select
+                            id="accommodation"
+                            name="accommodation"
+                        >
+
+                            <option value="">
+                                Select accommodation
+                            </option>
+
+                            <option value="Budget">
+                                Budget
+                            </option>
+
+                            <option value="Mid-range">
+                                Mid-range
+                            </option>
+
+                            <option value="Luxury">
+                                Luxury
+                            </option>
+
+                            <option value="Luxury Plus">
+                                Luxury Plus
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Transport Preference
+                        </label>
+
+                        <div class="option-grid">
+
+                            <label class="option-card">
+
+                                <input
+                                    type="radio"
+                                    name="transport"
+                                    value="4x4 Safari Vehicle"
+                                    checked
+                                >
+
+                                <span class="option-card-content">
+
+                                    <strong>
+                                        4×4 Safari Vehicle
+                                    </strong>
+
+                                    <small>
+                                        Ideal for safari
+                                    </small>
+
+                                </span>
+
+                            </label>
+
+
+                            <label class="option-card">
+
+                                <input
+                                    type="radio"
+                                    name="transport"
+                                    value="Tour Van"
+                                >
+
+                                <span class="option-card-content">
+
+                                    <strong>
+                                        Tour Van
+                                    </strong>
+
+                                    <small>
+                                        Comfortable group travel
+                                    </small>
+
+                                </span>
+
+                            </label>
+
+
+                            <label class="option-card">
+
+                                <input
+                                    type="radio"
+                                    name="transport"
+                                    value="Private Vehicle"
+                                >
+
+                                <span class="option-card-content">
+
+                                    <strong>
+                                        Private Vehicle
+                                    </strong>
+
+                                    <small>
+                                        Personal travel
+                                    </small>
+
+                                </span>
+
+                            </label>
+
+
+                            <label class="option-card">
+
+                                <input
+                                    type="radio"
+                                    name="transport"
+                                    value="Airport Transfer"
+                                >
+
+                                <span class="option-card-content">
+
+                                    <strong>
+                                        Airport Transfer
+                                    </strong>
+
+                                    <small>
+                                        Airport pickup included
+                                    </small>
+
+                                </span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-navigation">
+
+                        <button
+                            type="button"
+                            class="booking-back"
+                            data-back="1"
+                        >
+                            ← Back
+                        </button>
+
+                        <button
+                            type="button"
+                            class="booking-next"
+                            data-next="3"
+                        >
+                            Continue
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     STEP 3
+                ========================== -->
+
+                <div
+                    class="booking-step"
+                    data-step="3"
+                >
+
+                    <div class="form-section-title">
+
+                        <span>03</span>
+
+                        <div>
+
+                            <h3>
+                                Your details
+                            </h3>
+
+                            <p>
+                                How can we get in touch with you?
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="firstName">
+                                First Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                placeholder="John"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="lastName">
+                                Last Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                placeholder="Doe"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address *
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="john@example.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone / WhatsApp *
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="+254 700 000 000"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="country">
+                            Country of Residence
+                        </label>
+
+                        <input
+                            type="text"
+                            id="country"
+                            name="country"
+                            placeholder="Kenya"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="requests">
+                            Special Requests
+                        </label>
+
+                        <textarea
+                            id="requests"
+                            name="requests"
+                            rows="5"
+                            placeholder="Tell us anything you'd like us to know..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <label class="checkbox-label">
+
+                        <input
+                            type="checkbox"
+                            id="agree"
+                            required
+                        >
+
+                        <span>
+                            I agree that Wildcraft Tours may contact
+                            me regarding my travel enquiry.
+                        </span>
+
+                    </label>
+
+
+                    <div class="form-navigation">
+
+                        <button
+                            type="button"
+                            class="booking-back"
+                            data-back="2"
+                        >
+                            ← Back
+                        </button>
+
+                        <button
+                            type="submit"
+                            class="booking-submit"
+                        >
+                            Submit Booking Request
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <!-- =====================================
+             BOOKING SUMMARY
+        ====================================== -->
+
+        <aside class="booking-summary">
+
+            <div class="summary-inner">
+
+                <span class="eyebrow">
+                    YOUR JOURNEY
+                </span>
+
+                <h3>
+                    Booking summary
+                </h3>
+
+
+                <div class="summary-image"></div>
+
+
+                <div class="summary-tour">
+
+                    <span>
+                        SELECTED EXPERIENCE
+                    </span>
+
+                    <strong id="summaryTour">
+                        Not selected
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-list">
+
+                    <div class="summary-item">
+
+                        <span>
+                            Travel Date
+                        </span>
+
+                        <strong id="summaryDate">
+                            Not selected
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-item">
+
+                        <span>
+                            Duration
+                        </span>
+
+                        <strong id="summaryDuration">
+                            Not selected
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-item">
+
+                        <span>
+                            Travelers
+                        </span>
+
+                        <strong id="summaryTravelers">
+                            1 Adult
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-item">
+
+                        <span>
+                            Accommodation
+                        </span>
+
+                        <strong id="summaryAccommodation">
+                            Not selected
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-item">
+
+                        <span>
+                            Transport
+                        </span>
+
+                        <strong id="summaryTransport">
+                            4×4 Safari Vehicle
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-note">
+
+                    <span>✦</span>
+
+                    <p>
+                        Every Wildcraft journey is customized
+                        to your preferences. A member of our team
+                        will contact you to discuss availability,
+                        itinerary and pricing.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     SUCCESS MODAL
+========================================= -->
+
+<div
+    class="success-modal"
+    id="successModal"
+>
+
+    <div class="success-box">
+
+        <button
+            class="modal-close"
+            id="modalClose"
+        >
+            ×
+        </button>
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <span class="eyebrow">
+            ENQUIRY RECEIVED
+        </span>
+
+        <h2>
+            Your journey
+            <em>is calling.</em>
+        </h2>
+
+        <p>
+            Thank you for choosing Wildcraft Tours.
+            We've received your booking request and
+            our travel team will get in touch with you
+            shortly.
+        </p>
+
+        <a
+            href="index.html"
+            class="btn btn-primary"
+        >
+            Back to Home
+            <span>→</span>
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="logo footer-logo"
+                >
+
+                    <span class="logo-icon">
+                        W
+                    </span>
+
+                    <span class="logo-text">
+
+                        <strong>
+                            WILDCRAFT
+                        </strong>
+
+                        <small>
+                            TOURS
+                        </small>
+
+                    </span>
+
+                </a>
+
+                <p>
+                    Crafting unforgettable journeys
+                    across Kenya.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="index.html#tours">
+                    Tours
+                </a>
+
+                <a href="index.html#destinations">
+                    Destinations
+                </a>
+
+                <a href="index.html#experiences">
+                    Experiences
+                </a>
+
+                <a href="booking.html">
+                    Book a Tour
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Company
+                </h4>
+
+                <a href="index.html#about">
+                    About Us
+                </a>
+
+                <a href="index.html#contact">
+                    Contact
+                </a>
+
+                <a href="#">
+                    FAQ
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Contact
+                </h4>
+
+                <a href="tel:+254700000000">
+                    +254 700 000 000
+                </a>
+
+                <a href="mailto:hello@wildcrafttours.co.ke">
+                    hello@wildcrafttours.co.ke
+                </a>
+
+                <span>
+                    Nairobi, Kenya
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="year"></span>
+                Wildcraft Tours. All rights reserved.
+            </p>
+
+            <div>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================
+     SCRIPTS
+========================================= -->
+
+<script src="js/main.js"></script>
+<script src="js/booking.js"></script>
+
+</body>
+</html>
